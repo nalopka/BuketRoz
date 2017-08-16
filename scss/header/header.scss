@@ -1,0 +1,35 @@
+.header {
+	position: relative;
+	height:90vh;
+	background-color: black;
+	color: white;
+	background: 
+		url('../img/header/bottom.png') bottom/5% repeat-x,
+		url('../img/header/main.png') center/cover no-repeat;
+	z-index: 1;
+		
+		
+	
+
+	@import "navigation.scss";
+	@import "about.scss";
+	@import "logo";
+	@import "yellow-block";
+
+	
+
+}
+.test1 {
+	height: 100vh;
+	position: relative;
+	z-index: -1;
+	// background: yellow;
+	.gradient {
+		// border: 1px solid red;
+		width: 100%;
+		height: 100px;
+		position: absolute;
+		top: -90px;
+		background: linear-gradient(to top, black , transparent);
+		opacity: 1;}
+}

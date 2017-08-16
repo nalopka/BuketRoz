@@ -1,0 +1,41 @@
+.yellow-block {
+		height: 80px;
+		width: 280px;
+
+		position: absolute;
+		top: 55%;
+		right: 245px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		color: black;
+		padding: 20px;
+		box-sizing: border-box;
+		background-color: #ffce22;
+		border: 1px solid #ac8d21;
+		h3 {font-size: 1.5em; line-height: 15px;}
+		p {font-size: 0.875em;  line-height: 15px;}
+		span { 
+			font-size: 2.25em; 
+			font-weight: bold;
+			position: relative;
+			display: inline-block;
+			&:before {
+				position: absolute;
+				bottom: 8px;
+				transform: rotate(-45deg);
+				right: -35px;
+				width: 32px;
+				content: "";
+				border-bottom: 1px solid black;}
+			&:after {
+				content: "Р";
+				position: absolute;
+				font-size: 1.1rem;
+				top: -5px;
+				right: -15px;
+			}
+		}
+	}

@@ -1,0 +1,10 @@
+.about {
+  padding: 5% 0 0 10%;
+  width: 460px; }
+  .about h4, .about p {
+    font-family: OpenSans, sans-serif;
+    padding-bottom: 10px; }
+  .about h4 {
+    font-weight: 300;
+    font-size: 1.875em;
+    color: #a9c321; }

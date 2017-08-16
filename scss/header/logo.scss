@@ -1,0 +1,17 @@
+.logo {
+		position: absolute;
+		top: 40%;
+		right: 240px;
+		h2 {
+			font-size: 3.375em;
+			text-transform: uppercase;
+		}
+		p { 
+			background-image: 
+				url("../img/header/inet-left.png"),
+				url("../img/header/inet-right.png");
+			background-position: 30px, 250px;
+			background-repeat: no-repeat;
+			font-size: 1.31em; 
+			text-align: center;}
+}

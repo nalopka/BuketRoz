@@ -1,0 +1,30 @@
+.navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 80px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white url("img/header/rose.png") left top no-repeat; }
+  .navigation li {
+    display: inline-block; }
+    .navigation li a {
+      font-size: 1.375em;
+      color: black;
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      margin-right: 35px; }
+  .navigation a[href^="tel"] {
+    padding-left: 50px;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none; }
