@@ -2,19 +2,18 @@
 		height: 80px;
 		width: 280px;
 
-		position: absolute;
-		top: 55%;
-		right: 245px;
-
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-
+		
 		color: black;
+		margin-top: 30px;
 		padding: 20px;
 		box-sizing: border-box;
+
 		background-color: #ffce22;
 		border: 1px solid #ac8d21;
+
 		h3 {font-size: 1.5em; line-height: 15px;}
 		p {font-size: 0.875em;  line-height: 15px;}
 		span { 

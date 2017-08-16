@@ -8,36 +8,28 @@ head
 	script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 title Букет роз - интернет магазин
 body
-	header.header
-		nav.navigation
-			ul
-				li
-					a(href="#") Купить
-				li
-					a(href="#") Галерея
-				li
-					a(href="#") О нас
-			a(href="tel:225259") 
-				span (3822) 
-				| 22-52-59
-		.about
-			h4 Букет роз с доставкой по Томску
-			p
-				| Что может быть приятней, чем букет роз? Подарите цветы, чтобы вам подарили улыбку!
-			p
-				| Давайте напишем еще пару абзацев текста, чтобы люди лучше находили этот сайт в поисковиках по запросу цветы в Томске.
-		.logo 
-			h2 Букет роз
-			p Интернет-магазин
-		.yellow-block
-			h3 Розы
+	include header.jade
+	.offer
+		.block.offer-one
+			h3 Одна роза
+			p Элегантный подарок любимому&nbsp;человеку
+			form
+				.rose
+					input(type="radio" name="rose" id="red-rose" checked) 
+					label(for="red-rose") красная
+					br
+					input(type="radio" id="white-rose" name="rose") 
+					label(for="white-rose") белая
+		.block.offer-low
+			h3 7 роз
 			p 
-				| для ваших близких от 
-				span 72
-				| &ensp;&emsp;шт
+				| Классический букет из
+				br
+				| семи&nbsp;роз
+		.block.offer-medium
+		.block.offer-custom
+
 		
-	.test1
-		.gradient
 
 
 					

@@ -1,17 +1,17 @@
 .logo {
 		position: absolute;
 		top: 40%;
-		right: 240px;
+		right: 10%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		h2 {
 			font-size: 3.375em;
-			text-transform: uppercase;
-		}
-		p { 
-			background-image: 
-				url("../img/header/inet-left.png"),
-				url("../img/header/inet-right.png");
-			background-position: 30px, 250px;
-			background-repeat: no-repeat;
-			font-size: 1.31em; 
-			text-align: center;}
+			text-transform: uppercase;}
+		.decor { 
+			padding: 0 30px;
+			background: 
+				url("../img/header/inet-left.png") 0px no-repeat,
+				url("../img/header/inet-right.png") 230px no-repeat;
+			font-size: 1.31em; }
 }
