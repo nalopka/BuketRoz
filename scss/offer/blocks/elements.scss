@@ -8,11 +8,12 @@ h3 {
 	position: relative;
 	font-size: 1.5em;
 	font-weight: 300;}
-p {
+.about {
 	text-align: center;
 	padding-top: 30px;
 	font-weight: 300;
 	color: white;
+	height: 50px;
 	font-size: 0.875em;}
 label {
 	display: inline-block;
@@ -23,7 +24,7 @@ label {
 input[type="radio"] {
 	margin-bottom: 10px;
 	position: relative;
-	top: 2px;
+	top: 0px;
 	left: 25px;}
 input:checked + label {
 	color: white;
@@ -48,12 +49,39 @@ input[type="submit"] {
 	transition: 0.2s;
 	&:hover { transform: scale(1.04);}
 }
+input[type="number"] {
+	position: absolute;
+	top: -95px;
+	left: 0px;
+	height: 25px;
+	width: 40px;
+	border: 1px solid #666600;
+	background-color: #d3dcaf;
+	border-radius: 5px;
+	text-align: right;
+	font-size: 1rem;
+	padding-right: 5px;
+	&::-webkit-inner-spin-button {-webkit-appearance: none;}
+}
+.arrowup {
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	background-color: red;
+	top: -93px;
+	left: -17px;
+	background:transparent url('../img/offer/arrowup.png') left top no-repeat;
+}
+.arrowdown {
+	@extend .arrowup;
+	top: -77px;
+	background:transparent url('../img/offer/arrowdown.png') left top no-repeat;
+}
+
 .cost {
-	padding: 0; 
 	font-size: 3em; 
-	position: absolute; 
-	text-align: center;
-	bottom: 100px;
+	position: relative;
+	top: 230px;
 	span { font-weight: 700; } 
 }
 .radio {
@@ -71,6 +99,8 @@ input[type="submit"] {
 	height: 50px;
 	background-color: #ffcf26;
 	p { text-transform: uppercase; 
+		position: relative;
+		left: 4px;
 		color: black; 
 		padding-top: 8px; 
 		font-size: 0.7em; 

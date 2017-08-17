@@ -18,27 +18,22 @@ html {
   font-family: OpenSans;
   src: url(../fonts/OpenSans/OpenSans-Light.ttf);
   font-weight: 300; }
-
 @font-face {
   font-family: OpenSans;
   src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
   font-weight: 400; }
-
 @font-face {
   font-family: OpenSans;
   src: url(../fonts/OpenSans/OpenSans-Semibold.ttf);
   font-weight: 600; }
-
 @font-face {
   font-family: OpenSans;
   src: url(../fonts/OpenSans/OpenSans-Bold.ttf);
   font-weight: 700; }
-
 @font-face {
   font-family: OpenSans;
   src: url(../fonts/OpenSans/OpenSans-ExtraBold.ttf);
   font-weight: 900; }
-
 .header {
   position: relative;
   height: 90vh;
@@ -48,20 +43,10 @@ html {
   color: white;
   background: url("../img/header/main.png") center/cover no-repeat; }
   .header .navigation {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 80px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: white url("../img/header/logo-black-2x.png") 8%/5% no-repeat;
     padding: 0 10% 0 15%; }
@@ -96,18 +81,8 @@ html {
     position: absolute;
     top: 40%;
     right: 10%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center; }
     .header .logo h2 {
       font-size: 3.375em;
@@ -119,23 +94,12 @@ html {
   .header .yellow-block {
     height: 80px;
     width: 280px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     color: black;
     margin-top: 30px;
     padding: 20px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #ffce22;
     border: 1px solid #ac8d21; }
@@ -153,8 +117,6 @@ html {
       .header .yellow-block span:before {
         position: absolute;
         bottom: 8px;
-        -webkit-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
         right: -35px;
         width: 32px;
@@ -167,35 +129,17 @@ html {
         top: -5px;
         right: -15px; }
   .header .gradient {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     height: 200px;
     position: absolute;
     bottom: 0px;
     z-index: 2;
-    background: url("../img/header/bottom.png") bottom/7% repeat-x, -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
-    background: url("../img/header/bottom.png") bottom/7% repeat-x, -webkit-linear-gradient(bottom, black, transparent);
-    background: url("../img/header/bottom.png") bottom/7% repeat-x, -o-linear-gradient(bottom, black, transparent);
     background: url("../img/header/bottom.png") bottom/7% repeat-x, linear-gradient(to top, black, transparent); }
   .header .buy-button {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
     bottom: -90px;
@@ -241,46 +185,23 @@ html {
   height: 120vh;
   background-color: white;
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center; }
   .offer .block {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 20px 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: white;
     position: relative;
     z-index: 1;
     height: 520px;
     width: 240px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
     transition: 0.2s;
     border-bottom: 5px solid #566b01; }
     .offer .block:hover {
-      -webkit-box-shadow: 2px 0px 25px black;
       box-shadow: 2px 0px 25px black;
       z-index: 98; }
     .offer .block:after {
@@ -300,11 +221,12 @@ html {
       position: relative;
       font-size: 1.5em;
       font-weight: 300; }
-    .offer .block p {
+    .offer .block .about {
       text-align: center;
       padding-top: 30px;
       font-weight: 300;
       color: white;
+      height: 50px;
       font-size: 0.875em; }
     .offer .block label {
       display: inline-block;
@@ -315,7 +237,7 @@ html {
     .offer .block input[type="radio"] {
       margin-bottom: 10px;
       position: relative;
-      top: 2px;
+      top: 0px;
       left: 25px; }
     .offer .block input:checked + label {
       color: white;
@@ -335,21 +257,39 @@ html {
       position: absolute;
       left: 30px;
       bottom: 30px;
-      -webkit-box-shadow: 1px 1px 1px #667613;
       box-shadow: 1px 1px 1px #667613;
-      -webkit-transition: 0.2s;
-      -o-transition: 0.2s;
       transition: 0.2s; }
       .offer .block input[type="submit"]:hover {
-        -webkit-transform: scale(1.04);
-        -ms-transform: scale(1.04);
         transform: scale(1.04); }
-    .offer .block .cost {
-      padding: 0;
-      font-size: 3em;
+    .offer .block input[type="number"] {
       position: absolute;
-      text-align: center;
-      bottom: 100px; }
+      top: -95px;
+      left: 0px;
+      height: 25px;
+      width: 40px;
+      border: 1px solid #666600;
+      background-color: #d3dcaf;
+      border-radius: 5px;
+      text-align: right;
+      font-size: 1rem;
+      padding-right: 5px; }
+      .offer .block input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none; }
+    .offer .block .arrowup, .offer .block .arrowdown {
+      position: absolute;
+      width: 15px;
+      height: 10px;
+      background-color: red;
+      top: -93px;
+      left: -17px;
+      background: transparent url("../img/offer/arrowup.png") left top no-repeat; }
+    .offer .block .arrowdown {
+      top: -77px;
+      background: transparent url("../img/offer/arrowdown.png") left top no-repeat; }
+    .offer .block .cost {
+      font-size: 3em;
+      position: relative;
+      top: 230px; }
       .offer .block .cost span {
         font-weight: 700; }
     .offer .block .radio {
@@ -372,6 +312,8 @@ html {
       background-color: #ffcf26; }
       .offer .block .sale p {
         text-transform: uppercase;
+        position: relative;
+        left: 4px;
         color: black;
         padding-top: 8px;
         font-size: 0.7em; }
@@ -405,17 +347,8 @@ html {
     z-index: 99; }
     .offer .popular:after {
       content: "Популярный выбор";
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
       align-items: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center;
       color: black;
       height: 50px;
@@ -423,8 +356,11 @@ html {
       background-color: #fece25;
       width: 260px;
       left: -10px; }
+    .offer .popular .cost {
+      top: 370px; }
     .offer .popular .sale {
-      bottom: 160px; }
+      bottom: 160px;
+      font-size: 1rem; }
     .offer .popular label {
       width: 100px; }
   .offer .custom {

@@ -1,8 +1,12 @@
 .block.custom
-	h3 7 роз
-	p 
-		| Составьте свой  букет!
+	h3 роза
+	p.about
+		| Составьте свой букет!
+	input(type="number" name="rose-count" id="rose-count" min="3" max="999" value="32")
 	form
+		
+		.arrowup
+		.arrowdown
 		.radio
 			input(type="radio" name="rose-custom" id="red-rose-custom" checked) 
 			label(for="red-rose-custom") красная
@@ -23,11 +27,11 @@
 				span бесплатно!
 
 	p.cost
-		span 2232 
+		span#sale-cost 
 		| Р
 	.sale
 		p 
 			| скидка 
 			span 10%
-		p.line-through 2480 Р
+		p.line-through#total-cost  Р
 	input(type="submit" value="Купить")
