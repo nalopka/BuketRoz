@@ -1,0 +1,88 @@
+form {
+		left: 35px;
+		top: 120px; 
+		position: absolute;}
+h3 {
+	text-transform: uppercase;
+	color: white;
+	position: relative;
+	font-size: 1.5em;
+	font-weight: 300;}
+p {
+	text-align: center;
+	padding-top: 30px;
+	font-weight: 300;
+	color: white;
+	font-size: 0.875em;}
+label {
+	display: inline-block;
+	font-size: 0.875em;
+	width: 80px;
+	padding: 2px 5px 2px 25px;
+	text-align: left;}
+input[type="radio"] {
+	margin-bottom: 10px;
+	position: relative;
+	top: 2px;
+	left: 25px;}
+input:checked + label {
+	color: white;
+	border-radius: 30px;
+	border: 1px solid #647313;
+	background-color: #758716;}
+
+input[data-name="delivery-pay"] { top:-10px;}
+
+input[type="submit"] {
+	font-size: 1.25em;
+	height: 50px;
+	width: 177px;
+	background-color: #ffcf26;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+	box-shadow: 1px 1px 1px #667613;
+	transition: 0.2s;
+	&:hover { transform: scale(1.04);}
+}
+.cost {
+	padding: 0; 
+	font-size: 3em; 
+	position: absolute; 
+	text-align: center;
+	bottom: 100px;
+	span { font-weight: 700; } 
+}
+.radio {
+	height: 80px;
+	background: transparent url('../img/offer/rose.png') 0 center no-repeat;
+	padding-top: 20px;
+	padding-left: 40px;
+	span {font-size: 0.8em; top: -5px; position: relative; font-weight: 700;}}
+.sale {
+	position: absolute;
+	left: 25px;
+	bottom: 150px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: #ffcf26;
+	p { text-transform: uppercase; 
+		color: black; 
+		padding-top: 8px; 
+		font-size: 0.7em; 
+		span { font-weight: 700; font-size: 1.5em;}}
+	.line-through {
+		position: absolute;
+		left: 55px;
+		top: 5px;
+		width: 70px;
+		font-size: 1.125em;
+		text-align: left;
+		color: white;
+		text-decoration: line-through;
+	}
+}

@@ -1,0 +1,32 @@
+.block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		padding: 20px 0;
+		box-sizing: border-box;
+		color: white;
+		position: relative;
+		z-index: 1;
+		height: 520px;
+		width: 240px;
+		transition: 0.2s;
+		border-bottom: 5px solid #566b01;
+		&:hover {
+			box-shadow: 2px 0px 25px black;
+			z-index: 98;
+		}
+		&:after {
+			position: absolute;
+			left: 30px;
+			top: 70px;
+			content: "";
+			width: 180px;
+			border-bottom: 1px solid white;}
+
+		@import "elements";
+		
+
+		
+		
+	}

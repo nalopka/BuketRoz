@@ -1,0 +1,33 @@
+.block.custom
+	h3 7 роз
+	p 
+		| Составьте свой  букет!
+	form
+		.radio
+			input(type="radio" name="rose-custom" id="red-rose-custom" checked) 
+			label(for="red-rose-custom") красная
+			br
+			input(type="radio" id="white-rose-custom" name="rose-custom") 
+			label(for="white-rose-custom") белая
+			br
+			input(type="radio" id="random-rose-custom" name="rose-custom") 
+			label(for="random-rose-custom") смешанные
+		.radio
+			input(type="radio" name="delivery-custom" id="delivery-custom" checked) 
+			label(for="delivery-custom") самовывоз
+			br
+			input(type="radio" id="delivery-pay-custom" name="delivery-custom" data-name="delivery-pay") 
+			label(for="delivery-pay-custom") 
+				| доставка 
+				br
+				span бесплатно!
+
+	p.cost
+		span 2232 
+		| Р
+	.sale
+		p 
+			| скидка 
+			span 10%
+		p.line-through 2480 Р
+	input(type="submit" value="Купить")

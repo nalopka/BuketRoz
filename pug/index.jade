@@ -9,25 +9,7 @@ head
 title Букет роз - интернет магазин
 body
 	include header.jade
-	.offer
-		.block.offer-one
-			h3 Одна роза
-			p Элегантный подарок любимому&nbsp;человеку
-			form
-				.rose
-					input(type="radio" name="rose" id="red-rose" checked) 
-					label(for="red-rose") красная
-					br
-					input(type="radio" id="white-rose" name="rose") 
-					label(for="white-rose") белая
-		.block.offer-low
-			h3 7 роз
-			p 
-				| Классический букет из
-				br
-				| семи&nbsp;роз
-		.block.offer-medium
-		.block.offer-custom
+	include offer/offer.jade
 
 		
 

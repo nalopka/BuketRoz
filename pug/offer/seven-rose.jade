@@ -1,0 +1,35 @@
+.block.offer-low
+	h3 7 роз
+	p 
+		| Классический букет из
+		br
+		| семи&nbsp;роз
+	form
+		.radio
+			input(type="radio" name="rose-low" id="red-rose-low" checked) 
+			label(for="red-rose-low") красная
+			br
+			input(type="radio" id="white-rose-low" name="rose-low") 
+			label(for="white-rose-low") белая
+			br
+			input(type="radio" id="random-rose-low" name="rose-low") 
+			label(for="random-rose-low") смешанные
+		.radio
+			input(type="radio" name="delivery-low" id="delivery-low" checked) 
+			label(for="delivery-low") самовывоз
+			br
+			input(type="radio" id="delivery-pay-low" name="delivery-low" data-name="delivery-pay") 
+			label(for="delivery-pay-low") 
+				| доставка 
+				br
+				span +200 Р
+
+	p.cost
+		span 504 
+		| Р
+	.sale
+		p 
+			| скидка 
+			span 10%
+		p.line-through 560 Р
+	input(type="submit" value="Купить") 

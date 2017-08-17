@@ -1,0 +1,30 @@
+.block.popular
+		h3 15 роз
+		form
+			.radio
+				input(type="radio" name="rose-popular" id="red-rose-popular" checked) 
+				label(for="red-rose-popular") красная
+				br
+				input(type="radio" id="white-rose-popular" name="rose-popular") 
+				label(for="white-rose-popular") белая
+				br
+				input(type="radio" id="random-rose-popular" name="rose-popular") 
+				label(for="random-rose-popular") смешанные
+			.radio
+				input(type="radio" name="delivery-popular" id="delivery-popular" checked) 
+				label(for="delivery-popular") самовывоз
+				br
+				input(type="radio" id="delivery-pay-popular" name="delivery-popular" data-name="delivery-pay") 
+				label(for="delivery-pay-popular") 
+					| доставка 
+					br
+					span бесплатно!
+		p.cost
+			span 1080 
+			| Р
+		.sale
+			p 
+				| скидка 
+				span 10%
+			p.line-through 1200 Р
+		input(type="submit" value="Купить") 

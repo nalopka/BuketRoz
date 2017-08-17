@@ -1,0 +1,24 @@
+.block.offer-one
+	h3 Одна роза
+	p Элегантный подарок любимому&nbsp;человеку
+	form
+		.radio
+			input(type="radio" name="rose-one" id="red-rose-one" checked) 
+			label(for="red-rose-one") красная
+			br
+			input(type="radio" id="white-rose-one" name="rose-one") 
+			label(for="white-rose-one") белая
+		.radio
+			input(type="radio" name="delivery-one" id="delivery-one" checked) 
+			label(for="delivery-one") самовывоз
+			br
+			input(type="radio" id="delivery-pay-one" name="delivery-one" data-name="delivery-pay") 
+			label(for="delivery-pay-one") 
+				| доставка 
+				br
+				span +200 Р
+
+	p.cost
+		span 80 
+		| Р
+	input(type="submit" value="Купить") 

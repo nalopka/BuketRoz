@@ -6,77 +6,44 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	.block {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		
-		padding: 20px 0;
-		box-sizing: border-box;
-		
-		position: relative;
-		z-index: 1;
-		height: 520px;
-		width: 240px;
-		&:after {
-				position: absolute;
-				left: 30px;
-				top: 70px;
-				content: "";
-				width: 180px;
-				border-bottom: 1px solid white;}
-		
-		h3 {
-			color: white;
-			position: relative;
-			font-size: 1.5em;
-			font-weight: 300;
-		}
-		p {
-			text-align: center;
-			padding-top: 30px;
-			font-weight: 300;
-			color: white;
-			font-size: 0.875em;
-		}
-		label {
-			display: inline-block;
-			font-size: 0.875em;
-			width: 80px;
-			padding: 5px 5px 5px 25px;
-			text-align: center;
-			// position: relative;
-			// left: -30px;
-		}
-		input {
-			margin-bottom: 10px;
-			position: relative;
-			left: 25px;
-		}
-		input:checked + label {
-			color: white;
-
-			border-radius: 30px;
-			border: 1px solid #647313;
-			background-color: #758716;
-		}
-
-		.rose {
-			background:transparent url('../img/offer/rose.png') 0 center no-repeat;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			padding-left: 40px;
-		}
-
-
-	}
-	.offer-one,
-	.offer-medium {
-		background-color: #92a91b;
-	}
-	.offer-low,
-	.offer-custom {
-		background-color: #669900;
-	}
+	@import "blocks/main-block.scss";
 	
+	.offer-one,
+	.popular { background-color: #92a91b;}
+
+	.offer-low,
+	.custom { background-color: #669900;}
+	
+	.offer-one {
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+
+	.popular {
+		font-size: 18px;
+		height: 600px;
+		border: none;
+		border-radius: 20px;
+		position: relative;
+		z-index: 99;
+		&:after {
+			content: "Популярный выбор";
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: black;
+			height: 50px;
+			border: none;
+			background-color: #fece25;
+			width: 260px;
+			left: -10px;
+		}
+		.sale { bottom: 160px;}
+		label { width: 100px;}
+	}
+	.custom {
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+
+	}
 }
