@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	var	arrowUp = $(".arrowup");
 	var arrowDown = $(".arrowdown");
+	var sale = $("#sale");
 	var numberValue = $("#rose-count").val();
 	var totalPrice, salePrice, currentCount;
 	var startTotalPrice = numberValue * 80;
@@ -8,39 +9,31 @@ $(document).ready(function(){
 	$("#total-cost").text(startTotalPrice + " P");
 	$("#sale-cost").text(startSalePrice + " ");
 
-	$("#rose-count").on("change", function(){
-		numberValue = $("#rose-count").val();
-		console.log(numberValue);
-
-		$("#rose-count").val(numberValue);
-		totalPrice = numberValue * 80;
-		salePrice = numberValue * 72;
-		$("#total-cost").text(totalPrice + " P");
-		$("#sale-cost").text(salePrice + " ");
-		
-	});
 	
 
+	$("#rose-count").on("input", function(){
 
-	arrowUp.on("click", function(){
-		numberValue++;
+		var tempValue = $("#rose-count").val();
+		if (tempValue < 0) {
+			$("#rose-count").val(numberValue);
+		} else {
+		numberValue = $("#rose-count").val();
 		$("#rose-count").val(numberValue);
 		totalPrice = numberValue * 80;
 		salePrice = numberValue * 72;
 		$("#total-cost").text(totalPrice + " P");
-		$("#sale-cost").text(salePrice + " ");
+		$("#sale-cost").text(salePrice + " "); }
+		
+	});
+	arrowUp.on("click", function(){
+		numberValue++;
+		$("#rose-count").val(numberValue).trigger("input");
 
 	});
 	arrowDown.on("click", function(){
+		if (numberValue <= 1) return;
 		numberValue--;
-		if (numberValue >= 2) {
-			$("#rose-count").val(numberValue);
-			totalPrice = numberValue * 80;
-			salePrice = numberValue * 72;
-			$("#total-cost").text(totalPrice + " P");
-			$("#sale-cost").text(salePrice + " ");
-		} else {
-			numberValue = 2;}
+		$("#rose-count").val(numberValue).trigger("input");
 	});
 	
 });

@@ -2,7 +2,7 @@
 	h3 роз
 	p.about
 		| Составьте свой букет!
-	input(type="number" name="rose-count" id="rose-count" min="3" max="999" value="5")
+	input(type="number" name="rose-count" id="rose-count" min="0" max="999" value="25" pattern="0-9*")
 	form
 		
 		.arrowup
@@ -29,7 +29,7 @@
 	p.cost
 		span#sale-cost 
 		| Р
-	.sale
+	.sale#sale
 		p 
 			| скидка 
 			span 10%
