@@ -1,0 +1,28 @@
+input[type="number"] {
+	position: absolute;
+	top: 25px;
+	left:65px;
+	height: 25px;
+	width: 40px;
+	border: 1px solid #666600;
+	background-color: #d3dcaf;
+	border-radius: 5px;
+	text-align: right;
+	font-size: 1rem;
+	padding-right: 5px;
+	&::-webkit-inner-spin-button {-webkit-appearance: none;}
+}
+.arrowup {
+	position: absolute;
+	width: 15px;
+	height: 10px;
+	background-color: red;
+	top: -93px;
+	left: 10px;
+	background:transparent url('../img/offer/arrowup.png') left top no-repeat;
+}
+.arrowdown {
+	@extend .arrowup;
+	top: -77px;
+	background:transparent url('../img/offer/arrowdown.png') left top no-repeat;
+}

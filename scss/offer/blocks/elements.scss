@@ -1,3 +1,5 @@
+@import "custom-rose.scss";
+
 form {
 		left: 35px;
 		top: 120px; 
@@ -49,34 +51,7 @@ input[type="submit"] {
 	transition: 0.2s;
 	&:hover { transform: scale(1.04);}
 }
-input[type="number"] {
-	position: absolute;
-	top: -95px;
-	left: 0px;
-	height: 25px;
-	width: 40px;
-	border: 1px solid #666600;
-	background-color: #d3dcaf;
-	border-radius: 5px;
-	text-align: right;
-	font-size: 1rem;
-	padding-right: 5px;
-	&::-webkit-inner-spin-button {-webkit-appearance: none;}
-}
-.arrowup {
-	position: absolute;
-	width: 15px;
-	height: 10px;
-	background-color: red;
-	top: -93px;
-	left: -17px;
-	background:transparent url('../img/offer/arrowup.png') left top no-repeat;
-}
-.arrowdown {
-	@extend .arrowup;
-	top: -77px;
-	background:transparent url('../img/offer/arrowdown.png') left top no-repeat;
-}
+
 
 .cost {
 	font-size: 3em; 
