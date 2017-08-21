@@ -1,39 +1,45 @@
-$(document).ready(function(){
+$(function(){
 	var	arrowUp = $(".arrowup");
 	var arrowDown = $(".arrowdown");
 	var sale = $("#sale");
-	var numberValue = $("#rose-count").val();
+	var inputValue = $("#rose-count");
+	var numberValue = inputValue.val();
 	var totalPrice, salePrice, currentCount;
 	var startTotalPrice = numberValue * 80;
 	var startSalePrice = numberValue * 72;
 	$("#total-cost").text(startTotalPrice + " P");
 	$("#sale-cost").text(startSalePrice + " ");
 
-	
+	inputValue.on("input", function(){
 
-	$("#rose-count").on("input", function(){
-
-		var tempValue = $("#rose-count").val();
+		var tempValue = inputValue.val();
 		if (tempValue < 0) {
-			$("#rose-count").val(numberValue);
+			inputValue.val(numberValue);
+		} else  if (tempValue >= 7 ) {
+			sale.css("opacity","1");
+			numberValue = inputValue.val();
+			inputValue.val(numberValue);
+			totalPrice = numberValue * 80;
+			salePrice = numberValue * 72;
+			$("#total-cost").text(totalPrice + " P");
+			$("#sale-cost").text(salePrice + " "); 
 		} else {
-		numberValue = $("#rose-count").val();
-		$("#rose-count").val(numberValue);
-		totalPrice = numberValue * 80;
-		salePrice = numberValue * 72;
-		$("#total-cost").text(totalPrice + " P");
-		$("#sale-cost").text(salePrice + " "); }
+			sale.css("opacity","0");
+			numberValue = inputValue.val();
+			totalPrice = numberValue * 80;
+			$("#sale-cost").text(totalPrice + " ");
+		}
 		
 	});
 	arrowUp.on("click", function(){
 		numberValue++;
-		$("#rose-count").val(numberValue).trigger("input");
+		inputValue.val(numberValue).trigger("input");
 
 	});
 	arrowDown.on("click", function(){
 		if (numberValue <= 1) return;
 		numberValue--;
-		$("#rose-count").val(numberValue).trigger("input");
+		inputValue.val(numberValue).trigger("input");
 	});
 	
 });
