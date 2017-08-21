@@ -1,0 +1,63 @@
+.features {
+	height: 70vh;
+	.slider {
+		display: flex;
+		align-items: center;
+		position: relative;
+		height: 400px;
+		width: 800px;
+		margin: 100px auto 0 auto;
+
+		.left,
+		.right {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-color: #ffcf28;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.left {
+			&:after {
+				display: inline-block;
+				content: "";
+				width: 15px;
+				height: 15px;
+				border-left: 5px solid black;
+				border-top: 5px solid black;
+				transform: rotate(-45deg);
+				position: relative;
+				top: 15px;
+				left: 18px;}
+		}
+		.right {
+			right: 0;
+			@extend .left;
+			transform: rotate(180deg);}
+		.slider-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid red;
+			width: 2800px;
+			height: 100%;}
+			overflow: hidden;
+
+		.slider-first {
+			width: 700px;
+			height: 80%;
+			border: 1px solid red;
+			background:transparent url('../img/review/pig.png') left no-repeat;
+			padding-left: 40%;
+			padding-top: 10%;
+			box-sizing: border-box;
+			h3, p { width: 370px;}
+			h3 {font-size: 2.25em; font-weight: 300; padding-bottom: 20px;}
+			p {font-weight: 300;}
+		.slider-second,
+		.slider-third {
+			@extend .slider-first;
+		}
+		} 
+	}
+}

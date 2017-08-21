@@ -1,4 +1,6 @@
 .block {
+		@import "elements";
+		
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -23,10 +25,5 @@
 			content: "";
 			width: 180px;
 			border-bottom: 1px solid white;}
-
-		@import "elements";
-		
-
-		
 		
 	}

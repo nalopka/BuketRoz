@@ -1,0 +1,45 @@
+.our-rose {
+	height: 60vh;
+	min-width: 800px;
+	min-height: 500px;
+	padding: 0 15%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background:transparent url('../img/our-rose/bottom.png') bottom/8% repeat-x;
+	.about {
+		font-weight: 300;
+		h3 { font-weight: inherit; font-size: 2.25em; padding-bottom: 25px;}
+		width: 200px;
+	}
+	.first-rose,
+	.second-rose {
+		width: 200px;
+		height: 200px;
+		border: 5px solid #ffce22;
+		border-radius: 50%;
+	}
+	.first-rose { background:transparent url('../img/our-rose/rose1.png') center/80% no-repeat; }
+	.second-rose { background:transparent url('../img/our-rose/rose2.png') center/80% no-repeat; }
+
+	.more-rose {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+
+		@extend .first-rose;
+
+		border: none;
+		background-image: none;
+		background-color: #ffce22;
+		p {
+			cursor: inherit;
+			width: 120px; 
+			text-align: center; 
+			font-size: 1.875em; 
+			font-weight: 700; 
+			text-transform: uppercase;}
+	}
+}
