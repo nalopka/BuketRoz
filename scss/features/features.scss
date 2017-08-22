@@ -1,23 +1,25 @@
 .features {
 	height: 70vh;
 	.slider {
-		display: flex;
-		align-items: center;
 		position: relative;
 		height: 400px;
 		width: 800px;
 		margin: 100px auto 0 auto;
+		overflow: hidden;
+		transition: 0.5s;
 
-		.left,
-		.right {
+		.move-slider {
+			z-index: 2;
 			position: absolute;
+			top: 200px;
 			width: 50px;
 			height: 50px;
-			background-color: #ffcf28;
+			
 			border-radius: 50%;
 			cursor: pointer;
 		}
-		.left {
+		.move-slider[data-direction="left"] {
+			background-color: grey;
 			&:after {
 				display: inline-block;
 				content: "";
@@ -30,34 +32,48 @@
 				top: 15px;
 				left: 18px;}
 		}
-		.right {
-			right: 0;
-			@extend .left;
+		.move-slider[data-direction="right"]  {
+			background-color: #ffcf28;
+			right: 0px;
+			@extend .move-slider[data-direction="left"];
 			transform: rotate(180deg);}
 		.slider-container {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			border: 1px solid red;
-			width: 2800px;
-			height: 100%;}
+			height: 100%;
 			overflow: hidden;
-
-		.slider-first {
-			width: 700px;
-			height: 80%;
-			border: 1px solid red;
-			background:transparent url('../img/review/pig.png') left no-repeat;
-			padding-left: 40%;
-			padding-top: 10%;
+			transition: 0.5s;
+		}
+		.slider-small {
+			position: absolute;
+			top: 150px;
+			left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: 1s;
+			
+		}
+		.slider-item {
+			position: relative;
+			// border: 1px solid orange;
+			width: 800px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+			padding: 0 50px;
+			height: 100%;
 			box-sizing: border-box;
 			h3, p { width: 370px;}
 			h3 {font-size: 2.25em; font-weight: 300; padding-bottom: 20px;}
 			p {font-weight: 300;}
-		.slider-second,
-		.slider-third {
-			@extend .slider-first;
 		}
-		} 
+		.first,
+		.second,
+		.third {
+			background:transparent url('../img/features/pig.png') 15% no-repeat;
+		}
 	}
 }

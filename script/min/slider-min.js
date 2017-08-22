@@ -1,0 +1,1 @@
+$(function(){var e,i,n=$(".slider-container"),t=$(".slider-item");e=parseInt(t.width()),i=t.lenght()});
