@@ -1,15 +1,18 @@
-$(function(){
+$(function() {
 	var buttonLeft = $('.move-slider[data-direction="left"]');
 	var buttonRight = $('.move-slider[data-direction="right"]');
 	var sliderSmall = $(".slider-small");
-	var end = true;
 	var sliderSmallLimit = sliderSmall.width() - $(".slider-container").width(); 
+	var end = true,
+		left,
+		directionValue,
+		newLeft,
+		direction;
 	var moveSlider = function(direction) {
-		var left = sliderSmall.position().left; 
-		var directionValue = direction == 'right' ? -1 : 1;
+		left = sliderSmall.position().left; 
+		directionValue = direction == 'right' ? -1 : 1;
 		if (end) {
-			
-			var newLeft = left + 805 * directionValue;
+			newLeft = left + 805 * directionValue;
 			if (newLeft > 0) {
 				newLeft = 0; 
 				buttonLeft.css("background-color", "grey");} 
@@ -26,13 +29,12 @@ $(function(){
 		}
 	}
 	$(".move-slider").on("click", function() {
-
-	var direction = $(this).attr('data-direction'); 
-	moveSlider(direction); 
+		direction = $(this).attr('data-direction'); 
+		moveSlider(direction); 
 		end = false;
-			setTimeout(function(){
+		setTimeout(function(){
 			end = true;
-		}), 1000;
+		},1000);
 });
 });
 
