@@ -3,7 +3,7 @@
 	.slider {
 		position: relative;
 		height: 400px;
-		width: 800px;
+		width: 1000px;
 		margin: 100px auto 0 auto;
 		overflow: hidden;
 		transition: 0.5s;
@@ -12,8 +12,8 @@
 			z-index: 2;
 			position: absolute;
 			top: 200px;
-			width: 50px;
-			height: 50px;
+			width: 60px;
+			height: 60px;
 			
 			border-radius: 50%;
 			cursor: pointer;
@@ -29,8 +29,8 @@
 				border-top: 5px solid black;
 				transform: rotate(-45deg);
 				position: relative;
-				top: 15px;
-				left: 18px;}
+				top: 20px;
+				left: 23px;}
 		}
 		.move-slider[data-direction="right"]  {
 			background-color: #ffcf28;
@@ -41,13 +41,17 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			position: relative;
 			height: 100%;
+			width: 800px;
 			overflow: hidden;
 			transition: 0.5s;
+			margin: 0 auto;
 		}
 		.slider-small {
 			position: absolute;
-			top: 150px;
+			top: 0px;
+			height: 100%;
 			left: 0;
 			display: flex;
 			align-items: center;
@@ -57,7 +61,6 @@
 		}
 		.slider-item {
 			position: relative;
-			// border: 1px solid orange;
 			width: 800px;
 			display: flex;
 			flex-direction: column;
@@ -73,7 +76,7 @@
 		.first,
 		.second,
 		.third {
-			background:transparent url('../img/features/pig.png') 15% no-repeat;
+			background:transparent url('../img/features/pig.png') 15% 60% no-repeat;
 		}
 	}
 }
