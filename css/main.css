@@ -534,7 +534,8 @@ html {
       text-transform: uppercase; }
 
 .features {
-  height: 70vh; }
+  height: 70vh;
+  min-height: 400px; }
   .features .slider {
     position: relative;
     height: 400px;
@@ -650,3 +651,67 @@ html {
     .features .slider .second,
     .features .slider .third {
       background: transparent url("../img/features/pig.png") 15% 60% no-repeat; }
+
+.footer {
+  background-color: #f0f0f0;
+  height: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 0 15%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #666666; }
+  .footer .payment {
+    height: 100px;
+    width: 200px; }
+  .footer .copyright {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100px;
+    width: 260px;
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 1.5; }
+    .footer .copyright a {
+      color: inherit; }
+  .footer .copyright:last-of-type {
+    width: 150px; }
+  .footer .payment {
+    height: 80px;
+    background: transparent url("../img/footer/payments.png") left bottom no-repeat; }
+  .footer .social {
+    height: 80px; }
+    .footer .social p {
+      padding-bottom: 10px; }
+    .footer .social a {
+      display: inline-block;
+      margin-right: 5px;
+      width: 35px;
+      height: 35px;
+      background-color: red; }
+    .footer .social .vk {
+      background: transparent url("../img/footer/vk.png") left top/cover no-repeat; }
+    .footer .social .facebook {
+      background: transparent url("../img/footer/facebook.png") left top/cover no-repeat; }
+    .footer .social .twitter {
+      background: transparent url("../img/footer/twitter.png") left top/cover no-repeat; }

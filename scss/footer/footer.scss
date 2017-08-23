@@ -1,0 +1,51 @@
+.footer {
+	background-color: #f0f0f0;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0 15%;
+	box-sizing: border-box;
+	color: #666666;
+	%footer-item {
+		height: 100px;
+		width: 200px;
+	}
+	.copyright { 
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100px;
+		width: 260px;
+		font-size: 0.875em;
+		font-weight: 300;
+		line-height: 1.5;
+		a {color: inherit;}
+	}
+	.copyright:last-of-type {
+		width: 150px;
+	}
+
+	.payment {
+		@extend %footer-item;
+		height: 80px;
+		background:transparent url('../img/footer/payments.png') left bottom no-repeat;}
+
+	.social {
+		height: 80px;
+		p { padding-bottom: 10px;}
+		a {
+
+			display: inline-block;
+			margin-right: 5px;
+			width: 35px;
+			height: 35px;
+			background-color: red;
+		}
+		$list: ("vk", "facebook", "twitter");
+		@each $item in $list {
+			.#{$item} {
+			background:transparent url('../img/footer/#{$item}.png') left top/cover no-repeat;}
+		}
+	}
+}
