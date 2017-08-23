@@ -1,12 +1,17 @@
+
 $(function(){
-	var firstRose = $(".first-rose");
-	var secondRose = $(".second-rose");
 	var morePhotos = $(".more-rose");
-	var randomNumber, secondNumber;
+	var moreImages = $(".more-images");
+	var bouquet = $(".bouquet");
+
 	morePhotos.on("click", function(){
-		randomNumber = 1 + Math.floor(Math.random() * 9);
-		secondNumber = randomNumber + 1;
-		firstRose.css("background-image", " url('img/our-rose/rose"+ randomNumber +".png') ");
-		secondRose.css("background-image", " url('img/our-rose/rose"+ secondNumber  +".png') ");
+		moreImages.css("display", "flex");
+		bouquet.on("click",function(){
 	});
+	});
+	moreImages.on("click", function(){
+		moreImages.css("display", "none");
+	});
+
+
 });

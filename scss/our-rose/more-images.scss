@@ -1,0 +1,27 @@
+.more-images {
+	position: fixed;
+	display: none;
+	align-items: center;
+	justify-content: space-around;
+	flex-flow: wrap;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(black, 0.9);
+	transition: 1s;
+	.bouquet {
+		width: 300px;
+		height: 300px;
+		transition: 0.5s;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+	@for $i from 1 through 8 {
+		.bouquet:nth-of-type(#{$i}) {
+			background:transparent url('../img/our-rose/popup/bouquet#{$i}.jpg') left top/cover no-repeat;
+		}
+	}
+}
