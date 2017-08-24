@@ -1,7 +1,6 @@
 .features {
 	height: 70vh;
 	min-height: 400px;
-	max-height: 600px;
 	.slider {
 		position: relative;
 		height: 400px;
@@ -11,6 +10,7 @@
 		transition: 0.5s;
 
 		.move-slider {
+			background-color: #ffcf28;
 			z-index: 2;
 			position: absolute;
 			top: 200px;
@@ -21,7 +21,6 @@
 			cursor: pointer;
 		}
 		.move-slider[data-direction="left"] {
-			background-color: grey;
 			&:after {
 				display: inline-block;
 				content: "";
@@ -35,7 +34,7 @@
 				left: 23px;}
 		}
 		.move-slider[data-direction="right"]  {
-			background-color: #ffcf28;
+			
 			right: 0px;
 			@extend .move-slider[data-direction="left"];
 			transform: rotate(180deg);}
@@ -74,6 +73,9 @@
 			h3, p { width: 370px;}
 			h3 {font-size: 2.25em; font-weight: 300; padding-bottom: 20px;}
 			p {font-weight: 300;}
+		}
+		.disable {
+			background-color: grey;
 		}
 		.first,
 		.second,

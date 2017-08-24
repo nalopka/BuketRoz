@@ -19,15 +19,15 @@ $(function() {
 			newLeft = left + 805 * directionValue;
 			if (newLeft > 0) {
 				newLeft = 0; 
-				buttonLeft.css("background-color", "grey");} 
+				buttonLeft.addClass("disable");} 
 			else {
-				buttonLeft.css("background-color", "#ffcf28");}
+				buttonLeft.removeClass("disable");}
 
 			if (newLeft < -sliderSmallLimit) {
 				newLeft = -sliderSmallLimit;
-				buttonRight.css("background-color", "grey");} 
+				buttonRight.addClass("disable");} 
 			else { 
-				buttonRight.css("background-color", "#ffcf28");}
+				buttonRight.removeClass("disable");}
 			sliderSmall.css("left", newLeft);
 		}
 	}

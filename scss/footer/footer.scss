@@ -35,13 +35,12 @@
 		height: 80px;
 		p { padding-bottom: 10px;}
 		a {
-
 			display: inline-block;
 			margin-right: 5px;
 			width: 35px;
 			height: 35px;
-			background-color: red;
-		}
+			background-color: red;}
+			
 		$list: ("vk", "facebook", "twitter");
 		@each $item in $list {
 			.#{$item} {

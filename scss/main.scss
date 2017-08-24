@@ -13,6 +13,7 @@ html {
 	line-height: 1.4;
 	font-family: Opensans, sans-serif;
 }
+body[data-popup="popup"] {}
 
 @import "UI/fonts";
 @import "UI/color";
