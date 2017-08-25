@@ -1,22 +1,40 @@
 .more-images {
 	position: fixed;
 	display: none;
-	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	flex-flow: wrap;
 	top: 0;
 	left: 0;
 	z-index: 99;
-	height: 100vh;
-	width: 100%;
-	background-color: rgba(black, 0.2);
+	height: 100%;
+	overflow: scroll;
+	background-color: rgba(black, 0.5);
 	transition: 1s;
 	padding-top: 20px;
 	box-sizing: border-box;
+		&:after {
+			z-index: 99;
+			cursor: pointer;
+			content:"";
+			position: absolute;
+			right: 25px;
+			top: 25px;
+			width: 20px;
+			height: 3px;
+			background-color: white;
+			transform: rotate(45deg);}
+		&:before {
+			@extend .more-images:after;
+			transform: rotate(135deg);
+		}
+
+		
 	.bouquet {
-		width: 300px;
-		height: 300px;
+		width: 350px;
+		height: 350px;
 		transition: 0.5s;
+		margin-bottom: 25px;
+		margin-right: 25px;
 		&:hover {
 			transform: scale(1.05);
 		}

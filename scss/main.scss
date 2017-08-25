@@ -13,7 +13,11 @@ html {
 	line-height: 1.4;
 	font-family: Opensans, sans-serif;
 }
-body[data-popup="popup"] {}
+body[data-popup="popup"] {
+	overflow: hidden;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
 
 @import "UI/fonts";
 @import "UI/color";

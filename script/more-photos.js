@@ -6,15 +6,12 @@ $(function(){
 
 	morePhotos.on("click", function(){
 		moreImages.css("display", "flex");
-		$("body").css("overflow", "hidden");
-		$("body").css("padding-right", "15px");
-		$("body").css("box-sizing", "border-box");
-		
+		$("body").attr("data-popup", "popup");
+
+
 	moreImages.on("click", function(){
 		moreImages.css("display", "none");
-		$("body").css("overflow", "scroll");
-		$("body").css("padding-right", "0");
-		$("body").css("box-sizing", "border-box");
+		$("body").attr("data-popup", "");
 	});
 	bouquet.on("click",function(e){
 		e.stopPropagation();
