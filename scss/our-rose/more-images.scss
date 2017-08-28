@@ -35,8 +35,10 @@
 		transition: 0.5s;
 		margin-bottom: 25px;
 		margin-right: 25px;
+		border-radius: 10px;
 		&:hover {
 			transform: scale(1.05);
+			cursor: zoom-in;
 		}
 	}
 	@for $i from 1 through 8 {
@@ -45,10 +47,15 @@
 		}
 	}
 	.zoom-photo {
+		display: inline-block;
+		text-align: center;
 		position: absolute;
-		top: 30%;
-		left: 30%;
-		width: 500px;
-		height: 500px;
+		top: 100px;
+		width: 50%;
+		height: 80%;
+		&:hover {
+			transform: scale(1);
+			cursor: zoom-out;
+		}
 	}
 }
