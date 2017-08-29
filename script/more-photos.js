@@ -6,26 +6,28 @@ $(function(){
 	var currentbouquet,
 		currentSlide;
 
-	morePhotos.on("click", function(){
+
+	$("[data-gallery="test"]").on("click", ".more-rose", function() {
 		moreImages.css("display", "flex");
 		$("body").attr("data-popup", "popup");
+	});
 
-		// -----
-		moreImages.on("click", function(){
-			moreImages.css("display", "none");
-			$("body").attr("data-popup", "");
-			// скопировано из .zoom, надо как-то подсосать
-			$(".zoom").removeClass("bouquet zoom-active");
-			bouquet.css("opacity", "1");
+
+	$("[data-gallery="test"]").on("click", ".more-images", function() {
+		moreImages.css("display", "none");
+		$("body").attr("data-popup", "");
+		// скопировано из .zoom, надо как-то подсосать
+		$(".zoom").removeClass("bouquet zoom-active");
+		bouquet.css("opacity", "1");
 		});
-		// ------
-		bouquet.on("click",function(e){
-			e.stopPropagation();
-			currentbouquet = $(this).attr("data-item");
-			bouquet.css("opacity", "0");
-			$(".zoom").addClass("bouquet zoom-active").attr("data-item", currentbouquet );
-			currentSlide = $(".zoom").attr("data-item");
-		});
+
+	$("[data-gallery="test"]").on("click", ".bouquet", function(e) {
+		e.stopPropagation();
+		currentbouquet = $(this).attr("data-item");
+		bouquet.css("opacity", "0");
+		$(".zoom").addClass("bouquet zoom-active").attr("data-item", currentbouquet );
+		currentSlide = $(".zoom").attr("data-item");
+
 	});
 
 	$(".zoom").on("click", function(e){
