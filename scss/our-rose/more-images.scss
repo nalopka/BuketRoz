@@ -8,7 +8,7 @@
 	z-index: 99;
 	height: 100%;
 	overflow: scroll;
-	background-color: rgba(black, 0.5);
+	background-color: rgba(black, 0.7);
 	transition: 1s;
 	padding-top: 20px;
 	box-sizing: border-box;
@@ -42,7 +42,7 @@
 		}
 	}
 	@for $i from 1 through 8 {
-		.bouquet:nth-of-type(#{$i}) {
+			.bouquet[data-item="#{$i}"] {
 			background:transparent url('../img/our-rose/popup/bouquet#{$i}.jpg') left top/cover no-repeat;
 		}
 	}
@@ -53,9 +53,37 @@
 		top: 100px;
 		width: 50%;
 		height: 80%;
-		&:hover {
-			transform: scale(1);
-			cursor: zoom-out;
-		}
+		
+	
 	}
+	.zoom {
+		display: none;
+		width: 900px;
+		// display: inline-block;
+		height: 700px;
+		background-color: red;
+		position: absolute;
+		text-align: center;
+		top: 50px;
+		
+	}
+	.zoom-active {
+		display: inline-block;
+		&:hover {	
+			cursor: zoom-out;
+			transform: scale(1);}
+	}
+	.right,
+	.left {
+		position: absolute;
+		top: 350px;
+		width: 50px;
+		height: 50px;
+		background-color: green;
+	}
+	.right {
+		right: -150px;}
+	.left {
+		left: -150px;}
+
 }

@@ -555,7 +555,7 @@ body[data-popup="popup"] {
   z-index: 99;
   height: 100%;
   overflow: scroll;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -594,21 +594,21 @@ body[data-popup="popup"] {
       transform: scale(1.05);
       cursor: -webkit-zoom-in;
       cursor: zoom-in; }
-  .more-images .bouquet:nth-of-type(1) {
+  .more-images .bouquet[data-item="1"] {
     background: transparent url("../img/our-rose/popup/bouquet1.jpg") left top/cover no-repeat; }
-  .more-images .bouquet:nth-of-type(2) {
+  .more-images .bouquet[data-item="2"] {
     background: transparent url("../img/our-rose/popup/bouquet2.jpg") left top/cover no-repeat; }
-  .more-images .bouquet:nth-of-type(3) {
+  .more-images .bouquet[data-item="3"] {
     background: transparent url("../img/our-rose/popup/bouquet3.jpg") left top/cover no-repeat; }
-  .more-images .bouquet:nth-of-type(4) {
+  .more-images .bouquet[data-item="4"] {
     background: transparent url("../img/our-rose/popup/bouquet4.jpg") left top/cover no-repeat; }
-  .more-images .bouquet:nth-of-type(5) {
+  .more-images .bouquet[data-item="5"] {
     background: transparent url("../img/our-rose/popup/bouquet5.jpg") left top/cover no-repeat; }
-  .more-images .bouquet:nth-of-type(6) {
+  .more-images .bouquet[data-item="6"] {
     background: transparent url("../img/our-rose/popup/bouquet6.jpg") left top/cover no-repeat; }
-  .more-images .bouquet:nth-of-type(7) {
+  .more-images .bouquet[data-item="7"] {
     background: transparent url("../img/our-rose/popup/bouquet7.jpg") left top/cover no-repeat; }
-  .more-images .bouquet:nth-of-type(8) {
+  .more-images .bouquet[data-item="8"] {
     background: transparent url("../img/our-rose/popup/bouquet8.jpg") left top/cover no-repeat; }
   .more-images .zoom-photo {
     display: inline-block;
@@ -617,12 +617,33 @@ body[data-popup="popup"] {
     top: 100px;
     width: 50%;
     height: 80%; }
-    .more-images .zoom-photo:hover {
+  .more-images .zoom {
+    display: none;
+    width: 900px;
+    height: 700px;
+    background-color: red;
+    position: absolute;
+    text-align: center;
+    top: 50px; }
+  .more-images .zoom-active {
+    display: inline-block; }
+    .more-images .zoom-active:hover {
+      cursor: -webkit-zoom-out;
+      cursor: zoom-out;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
-      transform: scale(1);
-      cursor: -webkit-zoom-out;
-      cursor: zoom-out; }
+      transform: scale(1); }
+  .more-images .right,
+  .more-images .left {
+    position: absolute;
+    top: 350px;
+    width: 50px;
+    height: 50px;
+    background-color: green; }
+  .more-images .right {
+    right: -150px; }
+  .more-images .left {
+    left: -150px; }
 
 .features {
   height: 70vh;
