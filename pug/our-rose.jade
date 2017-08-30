@@ -5,8 +5,8 @@
 			| Наши розы &mdash; самые лучшие розы, хрустящие, белые и красные!
 	.first-rose
 	.second-rose
-	.more-rose(data-gallery="test")
-		p Другие фото
+	p.more-rose(data-gallery) Другие фото
+		//- p 
 		.more-images
 			.bouquet(data-item="1")
 			.bouquet(data-item="2")
@@ -17,5 +17,5 @@
 			.bouquet(data-item="7")
 			.bouquet(data-item="8")
 			.zoom
-				.left
-				.right
+				.move-image(data-move="left")
+				.move-image(data-move="right")

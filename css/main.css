@@ -531,14 +531,11 @@ body[data-popup="popup"] {
     cursor: pointer;
     border: none;
     background-image: none;
-    background-color: #ffce22; }
-    .our-rose .more-rose p {
-      cursor: inherit;
-      width: 120px;
-      text-align: center;
-      font-size: 1.875em;
-      font-weight: 700;
-      text-transform: uppercase; }
+    background-color: #ffce22;
+    font-size: 1.875em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; }
 
 .more-images {
   position: fixed;
@@ -633,16 +630,15 @@ body[data-popup="popup"] {
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1); }
-  .more-images .right,
-  .more-images .left {
+  .more-images .move-image {
     cursor: pointer;
     position: absolute;
     width: 300px;
     height: 700px;
     background-color: rgba(0, 0, 0, 0.2); }
-  .more-images .right {
+  .more-images .move-image[data-move="right"] {
     right: -350px; }
-  .more-images .left {
+  .more-images .move-image[data-move="left"] {
     left: -350px; }
 
 .features {

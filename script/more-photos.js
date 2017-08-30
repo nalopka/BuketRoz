@@ -4,16 +4,18 @@ $(function(){
 	var moreImages = $(".more-images");
 	var bouquet = $(".bouquet");
 	var currentbouquet,
-		currentSlide;
+		currentSlide,
+		changeImage,
+		changeImagePosition;
 
 
-	$("[data-gallery="test"]").on("click", ".more-rose", function() {
+	$("[data-gallery]").on("click", function() {
 		moreImages.css("display", "flex");
 		$("body").attr("data-popup", "popup");
 	});
 
 
-	$("[data-gallery="test"]").on("click", ".more-images", function() {
+	$("[data-gallery]").on("click", ".more-images",  function() {
 		moreImages.css("display", "none");
 		$("body").attr("data-popup", "");
 		// скопировано из .zoom, надо как-то подсосать
@@ -21,7 +23,7 @@ $(function(){
 		bouquet.css("opacity", "1");
 		});
 
-	$("[data-gallery="test"]").on("click", ".bouquet", function(e) {
+	$("[data-gallery]").on("click", ".bouquet", function(e) {
 		e.stopPropagation();
 		currentbouquet = $(this).attr("data-item");
 		bouquet.css("opacity", "0");
@@ -37,11 +39,28 @@ $(function(){
 			
 		});
 
+
+
+
+	
+	changeImage = $(".move-image");
+	changeImagePosition = $(".move").attr("data-move");
+
+	$("[data-gallery='gallery']").on("click", ".move-image", function() {
+
+	});
+
+
+
+
+
+
 	$(".left").on("click", function(e){
 			e.stopPropagation();
 			if (currentSlide <= 1) return;
 			currentSlide--;
 			$(".zoom").attr("data-item", currentSlide);
+
 			});
 
 	$(".right").on("click", function(e){

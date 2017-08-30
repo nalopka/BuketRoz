@@ -73,8 +73,7 @@
 			cursor: zoom-out;
 			transform: scale(1);}
 	}
-	.right,
-	.left {
+	.move-image {
 		cursor: pointer;
 		position: absolute;
 		width: 300px;
@@ -84,7 +83,7 @@
 
 		}
 	}
-	.right { right: -350px; }
-	.left { left: -350px; }
+	.move-image[data-move="right"] { right: -350px; }
+	.move-image[data-move="left"] { left: -350px; }
 
 }
